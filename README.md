@@ -1,6 +1,5 @@
 # sMsg
-Extremely small and straight forward messaging.
-< 0.193 kb minified. 
+Extremely small and straight forward messaging (< 0.193 kb minified). 
 
 
 Make as many subscriptions as you like and then just broadcast message to subscribers at any point. 
