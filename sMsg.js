@@ -15,7 +15,7 @@ var sMsg = (function () {
 			return subscribers;
 		},
 		broadcast: function( to, obj ) {
-			for (i = 0; i < subscribers[to].length; i++) {
+			for (var i = 0; i < subscribers[to].length; i++) {
 				subscribers[to][i](obj);
 			}
 		}
