@@ -1,7 +1,8 @@
-# sMsg
-
 !!sMsg is now part of s.js library https://github.com/snovakovic/s.js 
 This repository is deprecated. 
+
+
+# sMsg
 
 Extremely small and straight forward messaging (< 0.193 kb minified). 
 
