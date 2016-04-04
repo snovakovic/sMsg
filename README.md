@@ -1,6 +1,9 @@
 # sMsg
-Extremely small and straight forward messaging (< 0.193 kb minified). 
 
+!!sMsg is now part of s.js library https://github.com/snovakovic/s.js 
+This repository is deprecated. 
+
+Extremely small and straight forward messaging (< 0.193 kb minified). 
 
 Make as many subscriptions as you like and then just broadcast message to subscribers at any point. 
 When you broadcast message you can send any object as a second parameter passing to subscribers whatever you want.
