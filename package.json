@@ -1,0 +1,24 @@
+{
+  "name": "s-msg",
+  "version": "0.0.1",
+  "description": "Pub/Sub",
+  "main": "sMsg.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snovakovic/sMsg.git"
+  },
+  "keywords": [
+    "pub",
+    "sub",
+    "PubSub"
+  ],
+  "author": "stefan.novakovich@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/snovakovic/sMsg/issues"
+  },
+  "homepage": "https://github.com/snovakovic/sMsg#readme"
+}

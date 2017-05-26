@@ -1,23 +1,28 @@
+/*****************************************************
+	  https://github.com/snovakovic/sMsg
+    author: stefan.novakovich@gmail.com
+    version: 0.0.1
+ ***************************************************/
+(function(global, factory) {
+  // UMD pattern
+  if (typeof exports === 'object' && typeof module !== 'undefined') {
+    module.exports = factory();
+  } else if (typeof define === 'function' && define.amd) {
+    define(factory);
+  } else {
+    global.Wiggle = factory();
+  }
+}(this, (function() {
+  var subs = {};
 
-/************************************
- * sMsg : https://github.com/snovakovic/sMsg
- * author: stefan.novakovich@gmail.com (www.is.gd/snovakovic)
- * v0.1
- ****************************************/
-var sMsg = (function () {
-	var subscribers = [];
-	return {
-		on: function ( subscribe, callback ) {
-			subscribers[subscribe] = subscribers[subscribe] ? subscribers[subscribe] : [];
-			subscribers[subscribe].push(callback);
-		},
-		getAllSubscribers: function() {
-			return subscribers;
-		},
-		broadcast: function( to, obj ) {
-			for (var i = 0; i < subscribers[to].length; i++) {
-				subscribers[to][i](obj);
-			}
-		}
-	}
-})();
+  return {
+    on: function(subscribe, callback) {
+      subs[subscribe] = subs[subscribe] ? subs[subscribe] : [];
+      subs[subscribe].push(callback);
+    },
+    broadcast: function(subscription, data) {
+      var subscribers = subs[subscription];
+      (subscribers || []).forEach(function(sub) { sub.call(data); });
+    }
+  }
+})));
