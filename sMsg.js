@@ -1,7 +1,7 @@
 /*****************************************************
 	  https://github.com/snovakovic/sMsg
     author: stefan.novakovich@gmail.com
-    version: 0.0.1
+    version: 0.0.2
  ***************************************************/
 (function(global, factory) {
   // UMD pattern
@@ -10,7 +10,7 @@
   } else if (typeof define === 'function' && define.amd) {
     define(factory);
   } else {
-    global.Wiggle = factory();
+    global.sMsg = factory();
   }
 }(this, (function() {
   var subs = {};
